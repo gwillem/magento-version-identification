@@ -21,7 +21,7 @@ md5sums = defaultdict(lambda: defaultdict(list))
 releases = defaultdict(dict)
 
 for source in sources:
-    release = 'CE ' + source.split('/')[1].split('-')[1]
+    release = source.split('/')[1].replace('magento-', '').replace('-', ' ')
     with open(source) as fh:
         for line in fh:
             md5, name = line.strip().split()
