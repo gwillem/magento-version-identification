@@ -24,6 +24,8 @@ for source in sources:
     release = source.split('/')[1].replace('magento-', '').replace('-', ' ')
     with open(source) as fh:
         for line in fh:
+            if 'skin/frontend' in line: 
+                continue
             md5, name = line.strip().split()
             releases[release][name] = md5
             md5sums[name][md5].append(release)
@@ -72,6 +74,10 @@ for version, files in sorted(releases.items()):
     all_versions_for_this_hash = md5sums[filename][hash]
     fingerprints[filename][hash] = ', '.join(sorted(all_versions_for_this_hash))
 
+# After we determine which files to include, add all unique hashes to
+# these file entries. Some versions are now listed multiple times. This
+# reduces the number of files we need to request and gives better results
+# if a site has modified some files.
 for filename in fingerprints.keys():
     for hash, release in unique_sums[filename].items():
         fingerprints[filename][hash] = release
