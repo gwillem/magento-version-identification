@@ -71,5 +71,9 @@ for version, files in sorted(releases.items()):
     filename, hash = ordered_files[0]
     all_versions_for_this_hash = md5sums[filename][hash]
     fingerprints[filename][hash] = ', '.join(sorted(all_versions_for_this_hash))
+
+for filename in fingerprints.keys():
+    for hash, release in unique_sums[filename].items():
+        fingerprints[filename][hash] = release
     
 print json.dumps(fingerprints, indent=4)
