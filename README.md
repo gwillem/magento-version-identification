@@ -13,13 +13,16 @@ See https://github.com/steverobbins/magescan/issues/77
         "d0511b190cdddf865cca7873917f9a69": "CE 1.1.1", 
         "a2c7f9ddda846ba76220d7bcbe85c985": "CE 1.2.1, CE 1.2.1.1, CE 1.2.1.2"
     }, 
+    "js/mage/translate_inline.js": {
+        "915d0cf14ee7f6b3e29339ea46620908": "CE 1.9.2.0", 
+        "913b5412af26c3bb060b93a478beadc8": "CE 1.9.1.1"
+    }, 
     "js/mage/adminhtml/sales.js": {
         "a86ad3ba7ab64bf9b3d7d2b9861d93dc": "CE 1.0", 
         "d80c40eeef3ca62eb4243443fe41705e": "CE 1.5.0.1", 
         "95e730c4316669f2df71031d5439df21": "CE 1.1.0", 
         "bdacf81a3cf7121d7a20eaa266a684ec": "CE 1.5.1.0", 
         "ba43d3af7ee4cb6f26190fc9d8fba751": "EE 1.14.1.0", 
-        "c8dd0fd8fa3faa9b9f0dd767b5a2c995": "CE 1.9.1.1", 
         "4422dffc16da547c671b086938656397": "CE 1.4.2.0", 
         "0e400488c83e63110da75534f49f23f3": "CE 1.3.2, CE 1.3.2.1, CE 1.3.2.2, CE 1.3.2.3, CE 1.3.2.4", 
         "48d609bb2958b93d7254c13957b704c4": "CE 1.6.1.0, CE 1.6.2.0", 
