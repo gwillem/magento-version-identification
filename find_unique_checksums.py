@@ -83,3 +83,8 @@ for filename in fingerprints.keys():
         fingerprints[filename][hash] = release
     
 print json.dumps(fingerprints, indent=4)
+
+with open('version_hashes.json', 'w') as f:
+    f.write(json.dumps(fingerprints, indent=4))
+    
+
