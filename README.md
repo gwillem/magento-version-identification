@@ -13,4 +13,3 @@ See also https://github.com/steverobbins/magescan/issues/77
 
 Thanks to Steve Robbins for contributing hashes of Magento Enterprise releases.
 
-
