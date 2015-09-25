@@ -1,6 +1,6 @@
 # Magento Version Identification
 
-Hashes of static files can be used to determine a Magento's version remotely.
+Hashes of static files can be used to determine the version of a remote Magento installation. Currently this results in an accurate version identification for 91,7% of 220,000 tested Magento installations worldwide.
 
 See [the resulting hashes](version_hashes.json)
 
