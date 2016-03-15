@@ -11,6 +11,9 @@ for x in *.gz; do
 	if [ "$mainfolder" == "magento/" ]; then
 		echo found magento root
 		tar xf $x && mv magento $target
+	elif [ "$mainfolder" == "magento/lib/Zend/Mime.php" ]; then
+		echo found magento root
+		tar xf $x && mv magento $target	
 	else
 		echo found no magento root
 		mkdir -p $target
