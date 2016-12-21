@@ -103,10 +103,10 @@ if __name__ == '__main__':
         for hash, release in unique_sums[filename].items():
             fingerprints[filename][hash] = release
         
-    print json.dumps(fingerprints, indent=4)
+    print json.dumps(fingerprints, indent=4, sort_keys=True)
 
     with open('version_hashes.json', 'w') as f:
-        f.write(json.dumps(fingerprints, indent=4))
+        f.write(json.dumps(fingerprints, indent=4, sort_keys=True))
         
 class TestIt(unittest.TestCase):
     
