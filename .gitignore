@@ -2,3 +2,6 @@ releases/
 sources/
 *.pyc
 tmp/
+.idea/
+/deploy.sh
+/magento-downloader

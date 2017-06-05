@@ -1,6 +1,6 @@
 # Magento Version Identification
 
-Hashes of static files can be used to determine the version of a remote Magento installation. Currently this results in an accurate version identification for 91,7% of 220,000 tested Magento installations worldwide.
+Hashes of static files can be used to determine the version of a remote Magento installation. Measured in 2015, this resulted in an accurate version identification for 91,7% of 220,000 tested Magento installations worldwide.
 
 See [the resulting hashes](version_hashes.json)
 
@@ -11,5 +11,21 @@ This repo does:
 
 The original idea was discussed [here](https://github.com/steverobbins/magescan/issues/77).
 
-Thanks to Steve Robbins for contributing Enterprise hashes.
+# How to rebuild the winning fingerprints
+
+To get accurate results, you need a complete archive of Magento tar.gz files. There is no single source to mirror, so you would have to:
+
+1. Use a Magento partner account to mirror recent Community and Enterprise releases. The [magento-downloader](https://github.com/gwillem/magento-downloader) tool could help.
+1. You can find older releases here:
+
+```
+wget -r -l 1 -nc -nd -P sources --reject '*latest.tar.gz' -A '*.gz' http://magento.mirror.hypernode.com/releases/
+```
+
+Place releases in the `sources` folder, in `ce-full` and `ee-full` subfolders. Then run `generate_md5sums.py` (takes a few minutes) and `find_unique_checksums.py` which will calculate a new `version_hashes.json` for you.
+
+# Contributors
+
+Thanks: Steve Robbins and Sjoerd Langkemper.
+
 
