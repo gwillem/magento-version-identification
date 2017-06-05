@@ -26,6 +26,12 @@ Place releases in the `sources` folder, in `ce-full` and `ee-full` subfolders. T
 
 # Contributors
 
-Thanks: Steve Robbins and Sjoerd Langkemper.
+Thanks to Steve Robbins, Sjoerd Langkemper and Ryan Dewhurst!
+
+This code has been ported:
+
+* [PHP](https://github.com/steverobbins/magento-version-identification-php)
+* [Ruby](https://gist.github.com/ethicalhack3r/9cc15b914a2866c29db1415730fa910b)
+
 
 
