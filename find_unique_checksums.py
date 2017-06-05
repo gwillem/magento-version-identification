@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+import lzma
 from glob import glob
 from collections import defaultdict
 import json
@@ -7,6 +9,44 @@ import re
 """
 Searching for the smallest set of (publicly accessible) filenames that identify a Magento version.
 """
+
+STATIC_FILTER = [
+    'js/',
+    'media/',
+    'skin/',
+    'favicon.ico',
+]
+
+# Often removed/altered
+BLACKLIST_FILTER = [
+    'skin/frontend',
+]
+
+
+def is_primary_candidate(path):
+    # Can we use this path for identifiation purposes?
+    for x in BLACKLIST_FILTER:
+        if path.startswith(x):
+            return False
+
+    for x in STATIC_FILTER:
+        if path.startswith(x):
+            return True
+
+    return False
+
+
+def filter_candidates(lines):
+    for line in lines:
+        try:
+            md5, _, path = line.strip().partition(' ')
+        except:
+            print("line: {}".format(line))
+            raise
+
+        if is_primary_candidate(path):
+            yield md5, path
+
 
 def _sort_filehash_on_granularity_and_impact(filehash):
     # granularity = how many versions does this filehash identify (ideally, 1)
@@ -18,6 +58,7 @@ def _sort_filehash_on_granularity_and_impact(filehash):
     impact = -len(unique_sums[filename])
     
     return (granularity, impact)
+
 
 def humanize(versions):
     # squash multiple versions, assume ordered
@@ -37,14 +78,20 @@ def humanize(versions):
     return output.pop(0) + ' ' + '.'.join(output)
 
 
+def source_path_to_release(path):
+    # magento-CE-2.0.12.xz
+    match = re.search('(CE|EE)-(\d[\d\.]+\d)', path)
+    assert match, "Could not determine version from file {}".format(path)
+    return match.group(1) + ' ' + match.group(2)
+
+
 if __name__ == '__main__':
 
-    sources = glob('md5sums/*')
     md5sums = defaultdict(lambda: defaultdict(list))
     """
     md5sums = {
-        'file1' : {
-            'hash1': ['magento1','magento2'],
+        'x/y/file1' : {
+            'hash1': ['CE 1.0.0', 'EE 2.0.1'],
             'hash2': ...
         }
     }
@@ -54,9 +101,9 @@ if __name__ == '__main__':
     unique_sums = defaultdict(dict)
     """
     unique_sums = {
-        'file1' : {
-            'hash1' : 'releasex',
-            'hash2' : 'releasey'
+        'x/y/file1' : {
+            'hash1' : 'CE 1.0.0',
+            'hash2' : 'CE 1.9.3'
         }
 
     }
@@ -64,19 +111,18 @@ if __name__ == '__main__':
 
     releases_hashes = defaultdict(list)
 
+    sources = glob('md5sums/magento-??-1.*.xz')
+
     for source in sources:
-        release = source.split('/')[1].replace('magento-', '').replace('-', ' ')
-        with open(source) as fh:
-            for line in fh:
-                if 'skin/frontend' in line: 
-                    continue
-                md5, name = line.strip().split()
-                releases[release][name] = md5
-                md5sums[name][md5].append(release)
+        version = source_path_to_release(source)
+        with lzma.open(source, 'rt') as fh:
+            for md5, path in filter_candidates(fh):
+                releases[version][path] = md5
+                md5sums[path][md5].append(version)
 
 
-    for filename, hashes in md5sums.iteritems():
-        for hash, versions in hashes.iteritems():
+    for filename, hashes in md5sums.items():
+        for hash, versions in hashes.items():
             if len(versions) > 1:
                 continue
                 
@@ -103,11 +149,12 @@ if __name__ == '__main__':
         for hash, release in unique_sums[filename].items():
             fingerprints[filename][hash] = release
         
-    print json.dumps(fingerprints, indent=4, sort_keys=True)
+    print(json.dumps(fingerprints, indent=4, sort_keys=True))
 
     with open('version_hashes.json', 'w') as f:
         f.write(json.dumps(fingerprints, indent=4, sort_keys=True))
-        
+
+
 class TestIt(unittest.TestCase):
     
     def test_humanize(self):
@@ -122,3 +169,12 @@ class TestIt(unittest.TestCase):
             real = humanize(test)
             self.assertEqual(real, expected)
         
+    def test_version_from_path(self):
+
+        tests = (
+            ('md5sums/magento-CE-2.0.12.xz', 'CE 2.0.12'),
+            ('md5sums/magento-EE-2.0.0', 'EE 2.0.0'),
+        )
+        for test, want in tests:
+            got = source_path_to_release(test)
+            self.assertEqual(got, want)
