@@ -51,7 +51,7 @@ def hashes_from_archive(path):
                 continue
 
             # some archives have a container folder, others don't
-            if ti.name.startswith('magento'):
+            if ti.name.startswith('magento/') or ti.name.startswith('1.9.1.1/'):
                 relpath = ti.name.partition('/')[2]
             else:
                 relpath = ti.name
