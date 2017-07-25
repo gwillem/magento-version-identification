@@ -76,10 +76,10 @@
         "ef4f316f10a2f0d43e97cf082c3463c2": "EE 1.14.1.0"
     },
     "js/varien/payment.js": {
-        "3f0f88730dffa9aeb62bc4f7968cab50": "EE 1.14.3.3",
+        "3f0f88730dffa9aeb62bc4f7968cab50": "EE 1.14.3.x",
         "5220420e83bb828458ed2a99b05f6a12": "EE 1.14.1.0",
         "aaacf4fe8b88c217e11bee9a0001be7b": "EE 1.14.3.2",
-        "b0fa30cb88df701c17b3a49478d07358": "CE 1.9.3.3",
+        "b0fa30cb88df701c17b3a49478d07358": "CE 1.9.3.x",
         "b829958e83fe20fda7f03955bdc1d97f": "CE 1.9.1.0",
         "c877f6413c6a5b7d8a0225aa3ab88da0": "CE 1.9.3.2"
     },
