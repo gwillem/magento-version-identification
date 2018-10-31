@@ -11,9 +11,7 @@
         "1fa68aa36a89c4066c432a522fdb4f85": "EE 1.14.1.0",
         "32f1b774009ddfc8e3987c2678d72600": "CE 1.9.1.0",
         "3cad766c548b6ff3fee4e0e16d1dfbdc": "EE 1.14.3.7",
-        "459223d59f5b2e0a638d9f1a7e35ca01": "EE 1.14.3.x",
-        "5d78ec434f80f715995922cb99f7aa3e": "CE 1.9.3.7",
-        "fd0f9f88969424c293e025e943efca4b": "CE 1.9.3.x"
+        "5d78ec434f80f715995922cb99f7aa3e": "CE 1.9.3.7"
     },
     "js/mage/adminhtml/product.js": {
         "5290e61c41b2d880a93954a579e5ab36": "EE 1.14.1.0",
@@ -86,8 +84,10 @@
         "ef4f316f10a2f0d43e97cf082c3463c2": "EE 1.14.1.0"
     },
     "js/varien/payment.js": {
+        "3f0f88730dffa9aeb62bc4f7968cab50": "EE 1.14.3.x",
         "5220420e83bb828458ed2a99b05f6a12": "EE 1.14.1.0",
         "aaacf4fe8b88c217e11bee9a0001be7b": "EE 1.14.3.2",
+        "b0fa30cb88df701c17b3a49478d07358": "CE 1.9.3.x",
         "b829958e83fe20fda7f03955bdc1d97f": "CE 1.9.1.0",
         "c877f6413c6a5b7d8a0225aa3ab88da0": "CE 1.9.3.2"
     },
@@ -114,12 +114,18 @@
         "dd6fbd6cc6376045b3a62a823af9a361": "EE 1.10.0.2",
         "ffa8543ece0cc4d7f8093bbea2e29473": "EE 1.13.0.2"
     },
-    "skin/adminhtml/default/default/xmlconnect/mobile-catalog.css": {
-        "2c007f7cb23b60254618211f8cee153d": "EE 1.14.2.0",
-        "2cc6c63be2d928f1bf7ed87f5e61f4df": "EE 1.10.0.2",
-        "8343c0fcbf7fc86a28cd87e9b378df2f": "CE 1.5.0.1",
-        "85d23b8b0e0016a7105ed67c26d81676": "EE 1.14.1.0",
-        "b53f29a4eb8c715568eb806b593daba0": "EE 1.14.2.x",
-        "c9d7ab7cb854f5407d64a2be2bde2f71": "EE 1.10.1.1"
+    "skin/adminhtml/default/default/images/logo_print.gif": {
+        "b5c6c6f40ba031f613d0f2aaa7f3c087": "CE 1.9.3.10, EE 1.14.3.10"
+    },
+    "skin/adminhtml/default/default/xmlconnect/mobile-ipad-catalog.css": {
+        "16173a00a59b3b3f3f48da037ef38330": "EE 1.14.2.x",
+        "6373a50ddef001e2f97e57814d39c99f": "EE 1.14.1.0",
+        "9a5ae2a073c27317182587ef2f907732": "EE 1.10.1.1",
+        "bdbf839e3888697f937c2f1bec24b3cb": "EE 1.14.2.0",
+        "eb60d2b4d6fe9ff2564f31f2eb724789": "CE 1.5.0.1",
+        "f10264bde7f0a4d0b6714b06357f5946": "EE 1.10.0.2"
+    },
+    "skin/adminhtml/default/enterprise/images/login_logo.gif": {
+        "a15f85d59684e1ec548b758fb6165469": "EE 1.14.3.10"
     }
 }
