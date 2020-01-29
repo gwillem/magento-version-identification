@@ -2,19 +2,24 @@
     "js/enterprise/adminhtml/staging.js": {
         "246df54d3d41adb3028f5fbd667b4679": "EE 1.14.3.x",
         "a2c362f8df34fe22413f264916a85389": "EE 1.14.4.0",
-        "c8a011c0118bdf9cfd1e7399fd85f708": "EE 1.14.1.0"
+        "c8a011c0118bdf9cfd1e7399fd85f708": "EE 1.14.1.0",
+        "f1b9a520bde90572902c61d1c451120f": "EE 1.14.4.4"
     },
     "js/lib/flex.js": {
         "054d2e143c970eb7bd06fd8018365a9d": "CE 1.1.0",
         "4040182326f3836f98acabfe1d507960": "CE 1.4.0.1",
+        "6463e85db4a201a7af3f6632884275d7": "CE 1.9.4.4",
         "8502efe74970465a64079318115b8c0c": "CE 1.0",
+        "a8f224c7cf3ce698650a7225072d586b": "EE 1.14.4.4",
         "e37eeca21ff013a52085fc4f7bbe3299": "CE 1.9.1.0",
         "eb84fc6c93a9d27823dde31946be8767": "CE 1.4.0.0",
         "f1312acc7a5314daf5b2f3e1c4f1ef37": "EE 1.14.1.0"
     },
     "js/mage/adminhtml/backup.js": {
         "1fa68aa36a89c4066c432a522fdb4f85": "EE 1.14.1.0",
+        "3072872a60bb8ef1f48a3e81d8881222": "EE 1.14.4.4",
         "32f1b774009ddfc8e3987c2678d72600": "CE 1.9.1.0",
+        "39370c6447e629726d5d248c127541fb": "CE 1.9.4.4",
         "3cad766c548b6ff3fee4e0e16d1dfbdc": "EE 1.14.3.7",
         "459223d59f5b2e0a638d9f1a7e35ca01": "EE 1.14.3.x",
         "5d78ec434f80f715995922cb99f7aa3e": "CE 1.9.3.7",
@@ -24,9 +29,11 @@
         "5290e61c41b2d880a93954a579e5ab36": "EE 1.14.1.0",
         "71ab5165873c747ec18ac28616d43693": "CE 1.0",
         "7941874630e6f7d6fa1c7b040cd00157": "CE 1.9.1.0",
+        "7b00ba765c4046af67d6a0ab026174fb": "CE 1.9.4.4",
         "81d8065e9cee57a5e30ef2622f3a4506": "CE 1.6.0.0",
         "d50a6470367a63f6ad50eb84120dffa5": "CE 1.1.0",
-        "e887acfc2f7af09e04f8e99ac6f7180d": "CE 1.3.0"
+        "e887acfc2f7af09e04f8e99ac6f7180d": "CE 1.3.0",
+        "fd4ffc1452aacb9e2e086edc14c36302": "EE 1.14.4.4"
     },
     "js/mage/adminhtml/sales.js": {
         "1cb6e72078c384df2d62745e34060fed": "CE 1.9.0.x",
@@ -36,6 +43,7 @@
         "48d609bb2958b93d7254c13957b704c4": "CE 1.6.x",
         "4d6903199d6fb45c464b25b2dac6508d": "EE 1.9.1.1",
         "5656a8c1c646afaaf260a130fe405691": "CE 1.8.1.0",
+        "6cb29dfb4ec4a6a40360d6243b777238": "EE 1.14.4.4",
         "7ca2e7e0080061d2edd1e5368915c267": "EE 1.10.1.1",
         "839ead52e82a2041f937389445b8db04": "CE 1.3.3.0",
         "95e730c4316669f2df71031d5439df21": "CE 1.1.0",
@@ -46,13 +54,16 @@
         "ba43d3af7ee4cb6f26190fc9d8fba751": "EE 1.14.1.0",
         "bdacf81a3cf7121d7a20eaa266a684ec": "CE 1.5.1.0",
         "d1bfb9f8d4c83e4a6a826d2356a97fd7": "CE 1.3.1",
+        "d799a44f06900262af5b3242292d20b1": "CE 1.9.4.4",
         "d80c40eeef3ca62eb4243443fe41705e": "CE 1.5.0.1",
         "ec6a34776b4d34b5b5549aea01c47b57": "EE 1.10.0.2"
     },
     "js/mage/adminhtml/tools.js": {
         "2848e06105eddf6bc6b4fcb2d892f569": "EE 1.12.0.0",
+        "6bda8e19f310c5023ce07a9ab44ca185": "CE 1.9.4.4",
         "6cf85d9068a84007202411ca06ed6b7b": "CE 1.9.1.0",
         "86bbebe2745581cd8f613ceb5ef82269": "CE 1.7.0.x",
+        "bb2e66d349fd9c135c508a1458e51480": "EE 1.14.4.4",
         "ce878bdd1cf5adce7c6eb6f81c983bda": "EE 1.9.1.1",
         "d594237950932b9a3948288a020df1ba": "CE 1.3.x",
         "d7f5a1c048db67c081d94ee27e53b8bb": "CE 1.6.0.0",
@@ -68,6 +79,8 @@
         "d3252becf15108532d21d45dced96d53": "CE 1.4.1.1"
     },
     "js/varien/form.js": {
+        "1fe3b366b66bf13b02d26571b4801ade": "CE 1.9.4.4",
+        "4b3c33f5c351554bc412e3f4d9fd0b37": "EE 1.14.4.4",
         "8d4828273eec8af9d79d3baea24ea578": "EE 1.13.1.0",
         "8ec166d5e7afdb268f5a230b0c2d917b": "CE 1.8.1.0",
         "97f4e9bb5c9b78bff3de601dd3447975": "CE 1.8.0.0",
@@ -82,12 +95,14 @@
         "365504893b4d855adb8be98e1dac09e8": "CE 1.9.4.1",
         "5da899f2708c722fb8078012633c295d": "CE 1.9.4.3",
         "5db597726468ddccaabc7691d0a0e474": "CE 1.0",
+        "634c292271005a64a56c71abf98b5607": "CE 1.9.4.4",
         "64b4467d5f84c74aba5ee1b04c8c0439": "EE 1.9.1.1",
         "65b0925ee682224f77aad95528431e50": "CE 1.1.0",
         "721ae5c6332ed90f363e070cb3a4bebe": "CE 1.4.2.0",
         "77ca4a973ec6d904735a4f63373a2e40": "EE 1.14.4.2",
         "84056e9a629e7368e6f5d45c755e20e7": "CE 1.9.1.0",
         "9145e503e8a253ca5fdd4ac159d901c2": "CE 1.5.0.1",
+        "9a384ace7598461132cafc03a82be02a": "EE 1.14.4.4",
         "9ece00d4f98a2aa522e109e15ca5fb3d": "CE 1.5.1.0",
         "a42130cfa97b2700d7746b353e4160f2": "EE 1.14.1.0",
         "b732ca3b2071dc4263534964532ad984": "CE 1.9.4.2",
@@ -98,17 +113,21 @@
     },
     "js/varien/payment.js": {
         "5220420e83bb828458ed2a99b05f6a12": "EE 1.14.1.0",
+        "8807c3d8abdf7820d9743787af81e367": "CE 1.9.4.4",
         "aaacf4fe8b88c217e11bee9a0001be7b": "EE 1.14.3.2",
         "b829958e83fe20fda7f03955bdc1d97f": "CE 1.9.1.0",
-        "c877f6413c6a5b7d8a0225aa3ab88da0": "CE 1.9.3.2"
+        "c877f6413c6a5b7d8a0225aa3ab88da0": "CE 1.9.3.2",
+        "ec4b021bc391a9f404b2e9025d655d35": "EE 1.14.4.4"
     },
     "skin/adminhtml/default/default/below_ie7.css": {
         "00821eb553f463e0c4a5d2fcfd270c1c": "CE 1.1.0",
         "1a417c9c87fe8e6b32fc30e41aa46d2f": "CE 1.0",
         "a7fd88d4e81dbaeac2aa67df1d3cf2d0": "EE 1.14.1.0",
         "a96ac172cb56e82e1606d8d65019d681": "EE 1.9.1.1",
+        "bbe0e0a47d9f25aec1a0ba7f1df02836": "EE 1.14.4.4",
         "bf3062f6bd2a05a02946cb8370991538": "EE 1.14.2.x",
-        "e25bd636a8f9ecc6d25d22a752502042": "EE 1.14.2.0"
+        "e25bd636a8f9ecc6d25d22a752502042": "EE 1.14.2.0",
+        "fddc14db00d5f933dd3b2502fa30e0ec": "CE 1.9.4.4"
     },
     "skin/adminhtml/default/default/boxes.css": {
         "0902e89fb50b22d44f8242954a89300c": "EE 1.12.0.0",
@@ -129,6 +148,7 @@
         "6ff7812c3c20c7d86909e706a9e60bdb": "EE 1.14.2.x",
         "76a565d95fa10e5449bf63549bc5c76b": "CE 1.3.3.0",
         "7c050f817f0472a797f583ab121645c2": "CE 1.9.x",
+        "7d50affd3bc9d609630a74ee4c76ecec": "CE 1.9.4.4",
         "84b67457247969a206456565111c456b": "CE 1.1.x",
         "89c7b659d4e60aabd705af87f0014524": "EE 1.14.1.0",
         "8a5c088b435dbcf1bbaac9755d4ed45f": "EE 1.12.0.x",
@@ -137,6 +157,7 @@
         "adca1795a4c58ce6a6332ceb2a6c5335": "CE 1.5.1.0",
         "b17593f892e24469429ffd693573778c": "CE 1.1.x",
         "b497d3538b1c18012455527f267bef53": "EE 1.11.0.x",
+        "b8bfe2de577512342fc24eef1679057e": "EE 1.14.4.4",
         "ba8dd746c8468bfd1cff5c77eadc71a4": "CE 1.9.x",
         "c89fac64edb359d899aa7ae792ec5809": "EE 1.14.3.x",
         "cab2c9f5477e36b73c7d6ea36a9ad932": "EE 1.9.1.1",
